@@ -13,6 +13,7 @@ winner = None
 gameRunning = True
 
 def printBoard(board):
+	print("--------------------------------")
 	print(" " + board[0] + " | " + board[1] + " | " + board[2])
 	print("-----------")
 	print(" " + board[3] + " | " + board[4] + " | " + board[5])
@@ -71,8 +72,8 @@ def checkTie(board):
 def checkWin():
 	global gameRunning
 	if checkDiagonal(board) or checkHorizontal(board) or checkVertical(board):
-		print(f"The winner is {winner}")
 		printBoard(board)
+		print(f"The winner is {winner}")
 		gameRunning = False
 
 def switchPlayer():
