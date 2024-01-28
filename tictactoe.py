@@ -4,6 +4,11 @@
 # switch the player
 # check for win or tie again
 
+import pygame
+
+pygame.init()
+window = pygame.display.set_mode((1200,800))
+
 board = ["-","-","-",
 		 "-","-","-",
 		 "-","-","-"]
