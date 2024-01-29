@@ -1,4 +1,4 @@
-**The first of many games: TicTacToe**
+**G1: TicTacToe**
 
 **Jan 26, 2024** - V1.0.0
     - ADDED: Working TicTacToe between HUMAN/HUMAN
