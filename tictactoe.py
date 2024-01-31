@@ -4,10 +4,13 @@
 # switch the player
 # check for win or tie again
 
-import pygame
+# import pygame
+import random
 
-pygame.init()
-window = pygame.display.set_mode((1200,800))
+# pygame.init()
+
+# window = pygame.display.set_mode((1200,800))
+# pygame.display.set_caption("Tic Tac Toe")
 
 board = ["-","-","-",
 		 "-","-","-",
@@ -88,7 +91,17 @@ def switchPlayer():
 	else:
 		currentPlayer = "X"
 
+def computer(board):
+	while currentPlayer == "0":
+		position = random.randint(0,8)
+		if board[position] == "-":
+			board[position] = "0"
+			switchPlayer()
+
 while gameRunning:
 	playerInput(board)
+	checkWin()
+	checkTie(board)
+	computer(board)
 	checkWin()
 	checkTie(board)

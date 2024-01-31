@@ -8,3 +8,6 @@
 
 **Jan 28, 2024** - V1.1.1<br>
 - ADDED: Inplemented Pygame window only
+
+**Jan 30, 2024** - V1.1.2<br>
+- ADDED: HUMAN/COMPUTER is created
